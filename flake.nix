@@ -34,7 +34,7 @@
 			export PATH=${docker}/bin:$PATH
 			export DOCKER_CONFIG=$(pwd)/.docker
 			mkdir -p $DOCKER_CONFIG/cli-plugins
-			cp ${packages.scout-cli-plugin}/.docker/cli-plugins/docker-scout $DOCKER_CONFIG/cli-plugins
+			cp -u ${packages.scout-cli-plugin}/.docker/cli-plugins/docker-scout $DOCKER_CONFIG/cli-plugins
 		      '';
 	};
       });
